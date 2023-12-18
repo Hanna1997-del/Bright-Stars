@@ -8,69 +8,34 @@ module.exports = {
     './src/**/*.{ts,tsx}',
 	],
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
+      aspectRatio: {
+        '4/3': '4 / 3',
+        'banner': '16/5',
+        'thumbnail': '413/310',
+        'thumbnail-banner': '413/220',
+        'thumbnail-sm': "413/100"
+      },
+      screens: {
+        'sm': '600px',
+        // => @media (min-width: 640px) { ... }
+        'md': '768px',
+        // => @media (min-width: 768px) { ... }
+  
+        'lg': '992px',
+        // => @media (min-width: 1024px) { ... }
+  
+        'xl': '1200px',
+        // => @media (min-width: 1280px) { ... }
+  
+        '2xl': '1536px',
+        // => @media (min-width: 1536px) { ... }
+      },
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
-      keyframes: {
-        "accordion-down": {
-          from: { height: 0 },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        'active': '#E53638',
+        'smoke': '#eff0f6',
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [],
 }
