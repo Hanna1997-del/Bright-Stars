@@ -1,12 +1,17 @@
 "use client";
 import Banner from '@/components/Banner';
+import IconCard from '@/components/IconCard';
 import Navbar from '@/components/Navbar'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
+import AcademicKnowledgeIcon from '../../icons/AcademicKnowledgeIcon';
+import PersonalGrowthIcon from '../../icons/PersonalGrowthIcon';
+import RespectIcon from '../../icons/RespectIcon';
+import SocialResponsibilityIcon from '../../icons/SocialResponsibilityIcon';
 
 export default function Home() {
   return (
-    <main className='w-screen bg-gray-100 h-[100vh] flex flex-col justify-center items-center ' >
+    <main className='w-screen bg-gray-100 h-full flex flex-col justify-center items-center ' >
       
     
     
@@ -20,6 +25,23 @@ export default function Home() {
        Nam ea hic officia eius, nihil sunt harum aliquam ex labore voluptatibus
         eos esse. Nesciunt, at explicabo? Sit beatae debitis, exercitationem
        doloremque libero facere dignissimos esse facilis ipsam. Ex, voluptas officia?</p>
+
+       <section className="flex flex-col gap-2 lg:grid lg:grid-cols-4 lg:gap-6 mt-7">
+            <h2 className="lg:col-span-4 font-bold text-2xl mb-3">Our Mission</h2>
+            <IconCard
+              title="Academic Knowledge"
+              icon={<AcademicKnowledgeIcon color="#E53638" />}
+            />
+            <IconCard
+              title="Personal Growth"
+              icon={<PersonalGrowthIcon color="#E53638" />}
+            />
+            <IconCard title="Respect" icon={<RespectIcon color="#E53638" />} />
+            <IconCard
+              title="Social Responsibility"
+              icon={<SocialResponsibilityIcon color="#E53638" />}
+            />
+          </section>
     </div>
     
     
