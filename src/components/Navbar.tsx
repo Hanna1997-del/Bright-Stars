@@ -88,7 +88,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             mobileNav && "mt-[0vh]"
           )}
         >
-          <div className=" mt-[5rem] lg:mt-0 !w-[5rem] hidden lg:block">
+          <div className=" mt-[5rem] lg:mt-0 !w-[5rem]  lg:block">
             <Image src="/images/logo.png" alt="bsip logo" width={100} height={100} />
             
           </div>

@@ -11,14 +11,14 @@ import SocialResponsibilityIcon from '../../icons/SocialResponsibilityIcon';
 
 export default function Home() {
   return (
-    <main className='w-screen bg-gray-100 h-full flex flex-col justify-center items-center ' >
+    <main className='max-w-[1440px]  m-2 bg-gray-100 h-full flex flex-col justify-center items-center ' >
       
     
     
      
     
      <Banner url={'/images/home-banner.png'} alt='Bright Star Education'/>
-    <div className='w-[65%] mt-5'>
+    <div className='lg:w-[65%] max-w-[100%] mt-5'>
     <h1 className='font-bold text-2xl'>About Bright Stars</h1>
      <p className='text-md leading-6 mt-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
        Enim nulla ut sequi tempora autem excepturi facere odio sunt fugit? 
