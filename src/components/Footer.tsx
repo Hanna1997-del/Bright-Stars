@@ -17,12 +17,12 @@ const Footer: React.FC<FooterProps> = () => {
     return ( 
         <footer aria-label="Site Footer" className="mt-10 bg-gray-200 ">
       <div className="py-5">
-        <div className=" flex flex-col md:flex-row justify-between items-center center-content-area">
+        <div className=" flex flex-col md:flex-row justify-around items-center center-content-area">
           <div className="flex flex-row md:flex-col w-[full] md:w-[6rem] gap-5 items-center md:items-start">
             <div
               className={cn(
                 "nav-brand bg-white p-2 rounded shadow h-max",
-                "w-[10%]"
+                " lg:w-[80%] w-[10%]"
               )}
             >
               <Image src="/images/logo.png" alt="bsip logo" width={100} height={100} />

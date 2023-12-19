@@ -84,7 +84,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         <div
           className={cn(
             "fixed flex flex-col items-center gap-2 right-0 w-[100vw] h-[100vh] bg-white mt-[-100vh]",
-            mounted ? "" : "transition-all duration-500 ease",
+            mounted && "transition-all duration-500 ease" ,
             mobileNav && "mt-[0vh]"
           )}
         >
