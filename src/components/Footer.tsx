@@ -4,7 +4,7 @@ import Image from "next/image";
 import PhoneNumber from "./PhoneNumber";
 import { navlinks } from "./Navbar";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 
 
@@ -14,6 +14,7 @@ interface FooterProps {
  
 const Footer: React.FC<FooterProps> = () => {
     const router = useRouter();
+    const Pathname =  usePathname();
     return ( 
         <footer aria-label="Site Footer" className="mt-10 bg-gray-200 ">
       <div className="py-5">
@@ -64,7 +65,7 @@ const Footer: React.FC<FooterProps> = () => {
                 href={link.url}
                 className={cn(
                   "font-bold",
-                  router.asPath == link.url && "text-active"
+                  Pathname == link.url && "text-red-500"
                 )}
                 key={index}
               >

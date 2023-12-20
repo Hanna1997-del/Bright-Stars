@@ -54,7 +54,7 @@ const Navbar: React.FC<NavbarProps> = () => {
       
         <>
         
-        <div className="relative bg-gray-100   w-full flex justify-center">
+        <div className="relative bg-gray-100    w-full flex justify-center">
           {/* width: 66vw;
     margin-inline: 17vw; // 34 vw
     padding-block: 1vw; */}
@@ -88,7 +88,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         </div>
         <div
           className={cn(
-            "fixed flex flex-col items-center gap-2 right-0 w-[100vw] h-[100vh] bg-white mt-[-100vh]",
+            "fixed flex flex-col items-center gap-2 right-0 z-10 w-[100vw] h-[100vh] bg-white mt-[-100vh]",
             mounted && "transition-all duration-500 ease" ,
             mobileNav && "mt-[0vh]"
           )}
@@ -105,7 +105,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                     href={link.url}
                     className={cn(
                       "font-bold",
-                      pathName == link.url && "text-active"
+                      pathName == link.url && "text-red-500"
                     )}
                   >
                     {link.label}

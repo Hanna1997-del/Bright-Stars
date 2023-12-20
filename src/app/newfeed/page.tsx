@@ -25,10 +25,11 @@ const newfeed: React.FC<newfeedProps> = () => {
     const[card,setCard] = useState(Cardlist);
     const[visible,setvisible] = useState(6)
     
-    const handleclick = ()  => {
+    const moreclick = ()  => {
      setvisible((preValue) => preValue+3)
       
     }
+    
     
     return ( 
       
@@ -51,8 +52,9 @@ const newfeed: React.FC<newfeedProps> = () => {
       ))}
      </div>
      <button className="bg-[#E53637] text-[#ffffff] p-2 mt-5 rounded-lg"
-     onClick={handleclick}
+     onClick={moreclick}
      >View More</button>
+     
       </div>
       
      );
