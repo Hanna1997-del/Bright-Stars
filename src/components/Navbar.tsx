@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useContext, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AppContext } from "../../providers/AppProvider";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 
 interface NavbarProps {
@@ -16,6 +16,10 @@ export const navlinks = [
     {
       url: "/",
       label: "Home",
+    },
+    {
+      url: "/newfeed",
+      label: "News Feed"
     },
     {
       url: "/about-us",
@@ -42,6 +46,7 @@ const Navbar: React.FC<NavbarProps> = () => {
    const router = useRouter();
     const {mounted} = useContext(AppContext)
     const [mobileNav, setMobileNav] = useState<boolean>(false);
+    const pathName = usePathname();
     
     
     
@@ -65,7 +70,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                     href={link.url}
                     className={cn(
                       "font-bold",
-                      router.asPath == link.url ? "text-red-500" : ""
+                      pathName == link.url ? "text-red-500" : ""
                     )}
                   >
                     {link.label}
@@ -100,7 +105,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                     href={link.url}
                     className={cn(
                       "font-bold",
-                      router.asPath == link.url && "text-active"
+                      pathName == link.url && "text-active"
                     )}
                   >
                     {link.label}
