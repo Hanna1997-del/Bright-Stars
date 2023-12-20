@@ -14,7 +14,7 @@ export default function Home() {
     <main className='max-w-[1440px]  m-2 bg-gray-100 h-full flex flex-col justify-center items-center ' >
       
     
-    
+      
      
     
      <Banner url={'/images/home-banner.png'} alt='Bright Star Education'/>
