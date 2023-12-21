@@ -38,18 +38,18 @@ const newfeed: React.FC<newfeedProps> = () => {
      <Banner url={"/images/Rectangle 2.png"} alt="Banner2"  />
      <div >
         <div className="absolute top-[144px] left-0">
-        <img src={"/images/Rectangle 3.png"} alt="Rectangle" className="h-[300px] w-[412px]" />
-        <div className="absolute  text-white top-16 left-16 w-[284px] ">
-        <h1 className="font-bold text-5xl">News Feeds</h1>
-        <p className="text-3xl pt-4">Get updates about us here</p>
+        <img src={"/images/Rectangle 3.png"} alt="Rectangle" className="hidden lg:block h-[300px] w-[412px]" />
+        <div className="absolute   text-white top-4 left-3 md:top-8 md:left-16 lg:top-16 lg:left-16 w-[284px] ">
+        <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl">News Feeds</h1>
+        <p className="lg:text-3xl md:text-3xl pt-2 lg:pt-4">Get updates about us here</p>
         </div>
         </div>
      </div>
      </div>
-     <div className="grid grid-cols-3 mt-8 gap-5 cursor-pointer">
+     <div className="grid lg:grid-cols-3 grid-cols-2  lg:mt-8 mt-[5rem] gap-5 cursor-pointer">
      {card.slice(0,visible).map((cd,index)=> (
         <CardTag img={cd.img} tag1={cd.tag1} tag2={cd.tag2} key={index}/>
-      ))}
+      ))} 
      </div>
      <button className="bg-[#E53637] text-[#ffffff] p-2 mt-5 rounded-lg"
      onClick={moreclick}
