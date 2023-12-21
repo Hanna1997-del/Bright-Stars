@@ -54,11 +54,11 @@ const Navbar: React.FC<NavbarProps> = () => {
       
         <>
         
-        <div className="relative bg-gray-100    w-full flex justify-center">
+        <div className="relative bg-gray-100   w-full flex justify-center">
           {/* width: 66vw;
     margin-inline: 17vw; // 34 vw
     padding-block: 1vw; */}
-          <nav className="lg:absolute  flex justify-between items-center lg:w-[66vw] mx-auto py-[1vw]">
+          <nav className="lg:absolute z-10  flex justify-between items-center lg:w-[66vw] mx-auto py-[1vw]">
             <div className=" mt-3 w-[3.5rem] lg:mt-0 !lg:w-[6rem] hidden lg:block">
              <Image src={"/images/logo.png"} alt="bsip logo" width={50} height={50}/>
             </div>
@@ -80,7 +80,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             </ul>
           </nav>
           <div
-            className="absolute top-[1.7rem] right-[1rem] w-[3rem] h-[3rem] rounded-full flex  justify-center items-center shadow z-50"
+            className="absolute top-[1.7rem] right-[1rem] z-20  w-[3rem] h-[3rem] rounded-full flex  justify-center items-center shadow "
             onClick={() => setMobileNav((pre) => !pre)}
           >
             <GiHamburgerMenu />
