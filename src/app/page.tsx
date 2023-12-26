@@ -26,8 +26,8 @@ export default function Home() {
         eos esse. Nesciunt, at explicabo? Sit beatae debitis, exercitationem
        doloremque libero facere dignissimos esse facilis ipsam. Ex, voluptas officia?</p>
 
-       <section className="flex flex-col gap-2 lg:grid lg:grid-cols-4 lg:gap-6 mt-7">
-            <h2 className="lg:col-span-4 font-bold text-2xl mb-3">Our Mission</h2>
+       <section className="flex flex-col gap-2 lg:grid lg:grid-cols-2 lg:gap-6 mt-7">
+            <h2 className="lg:col-span-2 font-bold text-2xl mb-3">Our Mission</h2>
             <IconCard
               title="Academic Knowledge"
               icon={<AcademicKnowledgeIcon color="#E53638" />}

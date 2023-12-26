@@ -39,7 +39,7 @@ const newfeed: React.FC<newfeedProps> = () => {
      <div >
         <div className="absolute top-[144px] left-0">
         <img src={"/images/Rectangle 3.png"} alt="Rectangle" className="hidden lg:block h-[300px] w-[412px]" />
-        <div className="absolute   text-white top-4 left-3 md:top-8 md:left-16 lg:top-16 lg:left-16 w-[284px] ">
+        <div className="absolute   text-white bottom-4 left-3 md:top-8 md:left-16 lg:top-16 lg:left-16 w-[284px] ">
         <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl">News Feeds</h1>
         <p className="lg:text-3xl md:text-3xl pt-2 lg:pt-4">Get updates about us here</p>
         </div>

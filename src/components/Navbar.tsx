@@ -59,7 +59,7 @@ const Navbar: React.FC<NavbarProps> = () => {
     margin-inline: 17vw; // 34 vw
     padding-block: 1vw; */}
           <nav className="lg:absolute z-10  flex justify-between items-center lg:w-[66vw] mx-auto py-[1vw]">
-            <div className=" mt-3 w-[3.5rem] lg:mt-0 !lg:w-[6rem] hidden lg:block">
+            <div className=" mt-3 w-[3.5rem] lg:mt-0 !lg:w-[6rem] mr-[20rem] lg:mr-0 ">
              <Image src={"/images/logo.png"} alt="bsip logo" width={50} height={50}/>
             </div>
             <ul className="gap-5 hidden lg:flex">
@@ -80,7 +80,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             </ul>
           </nav>
           <div
-            className="absolute top-[1.7rem] right-[1rem] z-20  w-[3rem] h-[3rem] rounded-full flex  justify-center items-center shadow "
+            className="absolute top-[1.7rem] right-[1rem] z-20 cursor-pointer lg:hidden w-[3rem] h-[3rem] rounded-full flex  justify-center items-center shadow "
             onClick={() => setMobileNav((pre) => !pre)}
           >
             <GiHamburgerMenu />
@@ -88,7 +88,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         </div>
         <div
           className={cn(
-            "fixed flex flex-col items-center gap-2 right-0 z-10 w-[100vw] h-[100vh] bg-white mt-[-100vh]",
+            "fixed flex flex-col items-center gap-2 right-0 z-10 w-[100vw]  h-[85vh] bg-white mt-[-100vh]",
             mounted && "transition-all duration-500 ease" ,
             mobileNav && "mt-[0vh]"
           )}
