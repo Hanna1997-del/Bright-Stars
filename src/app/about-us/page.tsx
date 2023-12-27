@@ -15,16 +15,16 @@ const aboutUs: React.FC<aboutUsProps> = () => {
     <div className="max-w-[1440px] m-2  h-full flex flex-col justify-center items-center">
       <Banner url={"/images/home-banner.png"} alt="aboutUs-banner" />
 
-      <div className="mr-[25rem] mt-16 relative">
-        <h1 className="font-bold text-5xl pl-10">About Us</h1>
-        <div className=" border-l-[13px] border-l-red-500 h-[2.5rem] absolute top-0 left-0"></div>
+      <div className="mr-32 lg:mr-[25rem] mt-16 relative">
+        <h1 className="font-bold text-4xl lg:text-5xl pl-7 lg:pl-10">About Us</h1>
+        <div className="border-l-[10px] lg:border-l-[13px] border-l-red-500 h-[2rem] lg:h-[2.5rem] absolute top-0 left-0"></div>
       </div>
       <div className="ml-[2rem] max-w-[600px] mt-5">
-        <p className="text-2xl">
+        <p className="text-xl lg:text-2xl ">
           Croucher Science Week is a free festival that brings science closer to
           the everyday lives of young people in Hong Kong.
         </p>
-        <p className="text-xl pt-5 leading-10">
+        <p className="text-lg lg:text-xl pt-5  space-y-6">
           Through online events, live programmes and bilingual workshops, we
           create opportunities for people to ask questions, gain insights and
           think deeply about science and our world. <br />
