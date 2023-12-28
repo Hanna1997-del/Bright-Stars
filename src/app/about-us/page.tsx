@@ -48,7 +48,7 @@ const aboutUs: React.FC<aboutUsProps> = () => {
           All events are free. Tickets available from 4 March 2024.
         </p>
       </div>
-
+   
       <VisitFacebook/>
     </div>
   );

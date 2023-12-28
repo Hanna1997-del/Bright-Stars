@@ -4,9 +4,10 @@ interface IconCardProps {
     icon: ReactNode;
     title: string;
     className? : string;
+    info?:string;
 }
  
-const IconCard: React.FC<IconCardProps> = ({icon,title,className}) => {
+const IconCard: React.FC<IconCardProps> = ({icon,title,info,className}) => {
     return ( 
         <div
         className={[
@@ -19,6 +20,8 @@ const IconCard: React.FC<IconCardProps> = ({icon,title,className}) => {
           {/* <AcademicKnowledgeIcon color="#E53638" /> */}
         </div>
         <h5 className="pt-3">{title}</h5>
+        <h5 className="pt-3">{info}</h5>
+       
       </div>
      );
 }
